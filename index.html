@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+        integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/helper.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title> Flex Layout</title>
+</head>
+
+<body>
+
+    <div class="outer-wrap">
+        <header class="header d-flex">
+            <div class="site-info">
+                <h1>Heading</h1>
+                <p>
+                    Set back | Relax | Watch
+                </p>
+
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="javascript:;">Watch</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Download</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="content-area d-flex">
+            <main class="main-content-area">
+
+                <section class="posts">
+
+                    <article class="post post-half">
+                        <a href="javascript:;">
+                            <figure>
+                                <img src="./assets/images/img_1.jpg" class="img-fluid" alt="Fight Club">
+                                <figcaption class="post-content">
+                                    <h2>Fight Club</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora
+                                        voluptatem
+                                        nesciunt commodi Lorem ipsum dolor sit.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+
+                    <article class="post post-half">
+                        <a href="javascript:;">
+                            <figure>
+                                <img src="./assets/images/img_2.jpg" class="img-fluid" alt="Jack Sparrow">
+                                <figcaption class="post-content">
+                                    <h2>Jack Sparrow</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora
+                                        voluptatem
+                                        nesciunt commodi Lorem ipsum dolor sit.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </section>
+
+                <!-- <section class="one-row"> -->
+                    <div class="middle-content">
+                <article class="post post-one-third" id="one-third">
+                    <a href="javascript:;">
+                        <figure>
+                            <img src="./assets/images/img_3.jpg" class="img-fluid" alt="The Good The bad The Ugly">
+                            <figcaption class="post-content">
+                                <h2>The Good The bad The Ugly</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora
+                                    voluptatem
+                                    nesciunt commodi.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="post post-one-third" id="one-third">
+                    <a href="javascript:;">
+                        <figure>
+                            <img src="./assets/images/img_4.jpg" class="img-fluid" alt="Jack Sparrow">
+                            <figcaption class="post-content">
+                                <h2>sherlock Homes</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora
+                                    voluptatem
+                                    nesciunt commodi.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="post post-one-third" id="one-third">
+                    <a href="javascript:;">
+                        <figure>
+                            <img src="./assets/images/img_5.jpeg" class="img-fluid" alt="Jack Sparrow">
+                            <figcaption class="post-content">
+                                <h2>The Dark night rises</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora
+                                    voluptatem
+                                    nesciunt commodi.
+                                </p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+            </div>
+
+                <!-- </section> -->
+
+                <section>
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure>
+                                <img src="./assets/images/img_6.jpg" class="img-fluid" alt="Jack Sparrow">
+                                <figcaption class="post-content">
+                                    <h2>Joker</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora
+                                        voluptatem
+                                        nesciunt commodi.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </section>
+
+
+
+
+
+                <!--    Section Watch   -->
+
+                <section class="watch">
+                    <h2 class="section-heading">
+                        watch today
+                    </h2>
+                    <figure class="watch-card">
+                        <div class="watch-img">
+                            <img src="./assets/images/img_8.jpg" alt="Baby Driver" class="img-fluid">
+                        </div>
+                        <figcaption class="watch-content">
+                            <h3>baby driver</h3>
+                            <p>
+                                <span>2017</span>
+                                <span>121 min</span>
+                                <span>Action</span>
+                                <span>7.8</span>
+                                <span>8.30pm</span>
+                            </p>
+                            <p class="movie-story">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora voluptatem
+                                nesciunt commodi.
+                            </p>
+                            <a href="javascript:;"> Read more</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="watch-card img-Right">
+                        <div class="watch-img">
+                            <img src="./assets/images/img_9.jpg" alt="Baby Driver" class="img-fluid">
+                        </div>
+                        <figcaption class="watch-content">
+                            <h3>baby driver</h3>
+                            <p>
+                                <span>2017</span>
+                                <span>121 min</span>
+                                <span>Action</span>
+                                <span>7.8</span>
+                                <span>8.30pm</span>
+                            </p>
+                            <p class="movie-story">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia tempora voluptatem
+                                nesciunt commodi.
+                            </p>
+                            <a href="javascript:;"> Read more</a>
+                        </figcaption>
+                    </figure>
+                </section>
+
+
+                <!-- =======================  Download Section ========================== -->
+
+
+
+                <section class="downloadNow">
+                    <h2 class="section-heading">
+                        Download Now
+                    </h2>
+                    <div class="download-card">
+                        <div class="download-img">
+                            <img src="./assets/images/img_11.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="download-content">
+                            <a class="download-link" href="javascript:;">
+                                download <i class="fas fa-cloud-download"></i>
+                            </a>
+                            <div class="download-info">
+                                <div class="download-gener">
+                                    <h4> Gener : </h4>
+                                    <p>Adventure,Romance,Action,Hrror</p>
+                                </div>
+                                <div class="download-cast">
+                                    <h4>Cast : </h4>
+                                    <img src="./assets/images/img_11.jpg" alt="">
+                                    <img src="./assets/images/img_12.jpg" alt="">
+                                    <img src="./assets/images/img_13.jpg" alt="">
+                                    <img src="./assets/images/img_14.jpg" alt="">
+                                    <img src="./assets/images/img_15.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="download-rating">
+                                <p>
+                                <p>8</p>
+                                <p>(1200 votings)</p>
+                                <p> 6 seasons</p>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="gallery">
+                    <h2 class="section-heading">
+                        Movies Gallery
+                    </h2>
+                    <div class="gallery-imgs">
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_1.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_2.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_3.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_4.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_5.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_6.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_7.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_8.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_9.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_9.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="gallery-img">
+                            <a href="./assets/images/gallery_10.jpg" data-lightbox="moviegallery">
+                                <img src="./assets/images/gallery_10.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+            <aside class="sidebar-section">
+
+                <div class="wedget">
+                    <div class="widget-content">
+                        <h3>Top Rated movies</h3>
+                        <nav class="sidebar menu">
+                            <ul>
+                                <li>
+                                    <a href="javaScript:;">
+                                        the god father
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        12th
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        the dark night
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget-content">
+                        <h3>great actors</h3>
+                        <nav class="sidebar menu">
+                            <ul>
+                                <li>
+                                    <a href="javaScript:;">
+                                        alpacino
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        kaber de niro
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        jack nikolson
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        leonard dicaprio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        Brad Pitt
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget-content">
+                        <h3>upcoming movies</h3>
+                        <nav class="sidebar menu">
+                            <ul>
+                                <li>
+                                    <a href="javaScript:;">
+                                        deapool 2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        venom
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget-content">
+                        <h3>best directors</h3>
+                        <nav class="sidebar menu">
+                            <ul>
+                                <li>
+                                    <a href="javaScript:;">
+                                        stanley kubrick
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        alfrad hickkock
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        steven spielberg
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        martin scorsese
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        quentin tarantino
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget-content">
+                        <h3>categories</h3>
+                        <nav class="sidebar menu">
+                            <ul>
+                                <li>
+                                    <a href="javaScript:;">
+                                        action
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        drama
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        horror
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        romanace
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javaScript:;">
+                                        adventure
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="widget-content">
+                        <h3>top ten this week</h3>
+                        <nav class="sidebar menu">
+                            <ul>
+                                <li>
+                                    <a href="javaScript:;">
+                                        city of kubrick
+                                    </a>
+                                </li>
+                    </div>
+            </aside>
+        </div>
+
+
+
+        <footer class="footer">
+
+            <p> all Rights Reserved copyRight 2020 </p>
+
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

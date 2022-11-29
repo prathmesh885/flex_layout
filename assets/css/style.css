@@ -1,0 +1,351 @@
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing : border-box;
+}
+
+body{
+    background-color: #ededed;
+    font-family: 'Asap', sans-serif;
+    line-height: 1.5;
+}
+
+.row{
+    display: flex;
+    flex-wrap : wrap;
+}
+
+/* <============== Header CSS =============> */
+
+.header{
+    background-color: #000;
+    color : #fff;
+    height: 300px;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: #f6d200;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+.navbar ul li{
+    flex-grow: 1;
+}
+
+.navbar ul li a:link,
+.navbar ul li a:visited{
+    font-weight : bold;
+    text-transform: capitalize;
+    color : #000;
+    font-size : 24px;
+    padding : 10px;
+    display: block;
+    transition: all 0.8s ease-in-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.navbar ul li a:active{
+    color : #f6d200;
+    background-color: #000;
+}
+
+.site-info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+}  
+
+.site-info h1{
+    font-size: 64px;
+    font-weight : 400px;
+    text-transform: uppercase;
+}
+
+.site-info p{
+    font-style: italic;
+    color : #f6d200;
+    font-size : 24px;
+    font-weight: bold;
+}
+
+/*  ============= Post Section CSS =============== */
+
+
+.posts{
+    display : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
+
+.footer{
+    background-color: #000;
+}
+
+.content-area{
+    flex-direction: column;
+}
+
+.main-content-area{
+    background-color: #fff;
+    padding : 20px;
+}
+
+.post-content h2{
+    text-align: center;
+    background-color: #f6d200;
+    padding: 30px;
+}
+
+.post-content p{
+    text-align: center;
+    padding: 20px 40px;
+    /* width: 100%; */
+}
+
+.middle-content{
+    display: flex;
+    
+}
+
+
+/* =========================== Watch Card CSS ===================== */
+
+.watch-card{
+    background-color: #000;
+    color : #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.watch-content h3{
+    font-weight:  400px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+
+.watch-content h3, .watch-content p{
+    margin-bottom: 20px;;
+    text-transform: capitalize;
+
+}
+
+.watch-content a{
+    color : #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.watch-img img{
+    height: 100%;
+}
+
+.watch-content p span{
+    margin-right: 15px;
+}
+
+
+/* ================== downLoad section ====================== */
+
+a.download-link{
+    padding : 30px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateY(-10px); */
+}
+
+.download-gener{
+    margin-bottom: 10px;
+}
+
+.download-gener, .download-cast{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.download-cast img{
+    width : 50px;
+    border-radius : 50%;
+}
+
+.download-cast h4{
+    align-self: center;
+}
+.download-content{
+    background-color: #fff;
+    
+}
+.download-info{
+    background-color: #fff;
+    padding : 20px;
+}
+.download-rating{
+    padding: 20px;
+    text-align: center;
+    background-color: #f6d200;
+}
+.download-content > *{
+    flex-grow: 1;
+}
+.download-img{
+    background-color: #000;
+}
+
+i.fas.fa-cloud-download {
+    font-size: 60px;
+    size: 5;
+}
+
+/* ======================================= Gallery Section =========================== */
+
+.gallery-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.gallery-img{
+    height: 250px;
+    flex-grow: 1;
+    margin: 0 0 8px 8px;
+}
+
+.gallery-img a{
+    display: block;
+    height: 100%;
+    width : 100%
+}
+
+.gallery-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+/* CSS for Gallery Images */
+
+/* 1 5 9 */
+.gallery-img:nth-child(4n+1) {
+    flex-basis: 250px;
+}
+
+/* 2 6 10 */
+.gallery-img:nth-child(4n+2) {
+    flex-basis: 300px;
+}
+
+/* 3 7 */
+.gallery-img:nth-child(4n+3) {
+    flex-basis: 180px;
+}
+
+/* 4 */
+.gallery-img:nth-child(4n+4) {
+    flex-basis: 200px;
+}
+
+.footer p{
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    font-size: 28px;
+}
+
+/* ==================================== sidebar CSS===================================== */
+
+
+
+.widget-content{
+    padding: 20px;
+    background-color: #fff;
+}
+
+.widget-content{
+    text-transform: capitalize;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+
+.widget-content ul a{
+    color : #000;
+    font-weight: bold;
+}
+
+/*====================== MediaQuery for DeskTop ================== */
+
+@media all and (min-width:1200px){
+    .content-area{
+        flex-direction : row;
+    }
+    .sidebar-section{
+        flex : 0 0 400px; 
+        /* flex-grow: 0px;
+        flex-shrink: 0px;
+        flex-basis: 400px; */
+        padding: 20px;
+    }
+    .navbar ul{
+        flex-direction: row;
+    }
+    .posts{
+        flex-direction : row;
+    }
+    .post.post-half{
+        width: 49%;
+    }
+    /* .post-one-third{
+        width: 32%;
+    } */
+
+    #one-third{
+        width : 40%;
+    }
+
+    .watch-card{
+        flex-direction: row;
+    }
+    .watch-content{
+        padding : 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-Right .watch-img{
+        order: 1;
+    }
+    .download-content{
+        display: flex;
+    }
+    .sidebar{
+        padding: 5px 20px;
+    }
+    .one-row{
+        display : flex;
+        width: 100%;
+    }
+   
+}
+
+
+
+
+@media all and (min-width : 768px) and (max-width : 1200px){
+    .post{
+        width : 48%;
+    }
+}

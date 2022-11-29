@@ -1,0 +1,36 @@
+.d-flex{
+    display : flex;
+}
+
+/* ul a:linked, ul a:visited{
+    text-decoration: none;
+    list-style: none;
+} */
+
+.post-content p {
+    color: black;
+}
+
+.post-content h2 {
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+a:link, a:visited{
+    text-decoration: none;
+}
+
+.img-fluid{
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-heading{
+    color : #000;
+    margin : 30px 0;
+    font-size : 36px;
+    text-transform: capitalize;
+    text-align: center;
+}
